@@ -1,0 +1,153 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.header-container {
+  width: 100vw;
+  height: 100px;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.container-nav > ul > li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.icon-cart:hover {
+  cursor: pointer;
+}
+
+.shop-products {
+  width: 100%;
+  height: 100vh;
+  align-self: center;
+  padding-left: 40px;
+}
+.row-products {
+  width: 90vw;
+  height: 100%;
+  background: white;
+  display: flex;
+}
+.card-img-top {
+  height: 400px;
+  width: 90%;
+}
+.card {
+  width: 330px;
+  height: 584px;
+  box-shadow: 2px 2px 10px black;
+}
+.btn-add-cart {
+  margin-left: 100px;
+}
+
+.cart-empty {
+  padding: 20px;
+  text-align: center;
+}
+/* modal container */
+.modal-container {
+  font-size: 15px;
+  width: 50%;
+  margin: 0 45%;
+  max-height: 88vh;
+  color: #181818;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* arriba */
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 10vh;
+  scrollbar-color: none;
+  border-radius: 20px;
+  box-shadow: 4px 5px 5px #8f8f8fcc;
+}
+.modal-container::-webkit-scrollbar {
+  display: none;
+}
+.modal-header {
+  background-color: white;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+}
+
+.modal-header-button {
+  cursor: pointer;
+  padding: 30px;
+  border-radius: 50%;
+  margin-left: 94%;
+}
+.modal-container > .modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: justify;
+  align-items: center;
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background: white;
+  border: 0.5px solid #181818;
+  padding: 5px;
+}
+.modal-container > div > img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 4px 5px 5px #8f8f8fcc;
+  padding: 5px;
+  margin-right: 2px;
+}
+.total-content {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+.delete-prdouct {
+  cursor: pointer;
+}
+.modif-cant {
+  cursor: pointer;
+  padding: 5px;
+  background: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+.modif-cant :hover {
+  cursor: pointer;
+  background: black;
+}
+.aside-filtro {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.form-control {
+  width: 300px;
+}
+.app-general {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
